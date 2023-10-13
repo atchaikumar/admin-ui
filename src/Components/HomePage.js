@@ -1,6 +1,5 @@
 import "./HomePage.css"
 import React, {useState, useEffect} from "react"
-import Header from "./Header";
 import Table from "./Table";
 import PaginationButtons from "./PaginationButtons";
 import axios from "axios";
@@ -199,7 +198,6 @@ function HomePage() {
   if (cannotFetch) {
     return (
       <>
-        <Header />
         <div>
           <h5>
             Oops!. Cannot fetch data at the moment. Try refreshing the app or try again after some time.
@@ -211,7 +209,6 @@ function HomePage() {
 
   return(
     <React.Fragment>
-      <Header />
       <Box className="search-bar-container">
             <Box className="search-bar">
                 <input
